@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table HTML</title>
+
+    <script>
+        var myHoby = {
+        hoby: "football",
+        func: function(){
+            var self = this;
+            document.write("outer func: this.hoby = " + this.hoby + "<br />");
+            document.write("outer func: self.hoby = " + self.hoby + "<br />");
+    
+            (function(){
+                document.write("inner func: this.hoby = " + this.hoby + "<br />");
+                document.write("inner func: self.hoby = " + self.hoby);
+            });
+            
+        }
+    
+        }
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
